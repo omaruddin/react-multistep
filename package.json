@@ -34,7 +34,7 @@
   },
   "scripts": {
     "build": "esbuild react-multistep.js '--define:process.env.NODE_ENV=\"development\"' --external:'react' --bundle --format=cjs --loader:.js=jsx --outfile=index.tar",
-    "build:prod": "esbuild react-multistep.js '--define:process.env.NODE_ENV=\"production\"' --external:'react' --bundle --minify --format=cjs --loader:.js=jsx --outfile=index.js",
+    "build:prod": "esbuild react-multistep.js '--define:process.env.NODE_ENV=\"production\"' --external:'react' --bundle --minify --format=cjs --loader:.js=jsx --outfile=index.jsx",
     "pub:dry": "npm publish ./ --dry-run",
     "pub": "npm publish ./"
   }
